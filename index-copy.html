@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicole Ho @nh__nh__</title>
+  <!-- <link rel="stylesheet" href="/assets/style.css"> -->
+</head>
+<body class="flex">
+  <div class="text">
+    <h1>Nicole Ho</h1>
+    <h2>Design and development for web and publication</h2>
+  </div>
+  <div class="image">
+    <img src="assets/nh_holding_background_b.jpg" alt="Image of an iris flower in an amber vase">
+  </div>
+</body>
+</html>
+
+<style>
+  @font-face {
+  font-family: "ABC Diatype", Helvetica, sans-serif;
+  src: url("/assets/fonts/ABCDiatype-Regular.woff2") format("woff2"),
+    url("/assets/fonts/ABCDiatype-Regular.woff") format("woff"),
+    url("/assets/fonts/ABCDiatype-Regular.otf") format("otf");
+}
+
+:root {
+  --diatype: "ABC Diatype", Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  /* background-image: url("assets/nh_holding_background.jpg");
+  backdrop-filter: blur(15px);
+  background-size: cover;
+  background-position: center bottom 60%; */
+  margin: 0;
+  padding: 16px;
+}
+
+.text * {
+  font-family: var(--diatype);
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+div.text,
+div.image {
+  width: 50%;
+  /* padding: 16px; */
+}
+
+div.image {
+  overflow: hidden;
+}
+
+div.image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  filter: blur(15px);
+}
+</style>
