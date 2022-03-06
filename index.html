@@ -24,62 +24,70 @@
 </html>
 
 <style>
-  @font-face {
-    font-family: "ABC Diatype", Helvetica, sans-serif;
-    src: url("/assets/fonts/ABCDiatype-Regular.woff2") format("woff2"),
-      url("/assets/fonts/ABCDiatype-Regular.woff") format("woff"),
-      url("/assets/fonts/ABCDiatype-Regular.otf") format("otf");
-  }
+    @font-face {
+      font-family: "ABC Diatype", Helvetica, sans-serif;
+      src: url("/assets/fonts/ABCDiatype-Regular.woff2") format("woff2"),
+        url("/assets/fonts/ABCDiatype-Regular.woff") format("woff"),
+        url("/assets/fonts/ABCDiatype-Regular.otf") format("otf");
+    }
 
-  :root {
-    --diatype: "ABC Diatype", Helvetica, sans-serif;
-  }
+    :root {
+      --diatype: "ABC Diatype", Helvetica, sans-serif;
+    }
 
-  body {
-    background-image: url("assets/nh_holding_background_b2.jpg");
-    background-size: cover;
-    background-position: center bottom 45%;
-    margin: 0;
-    padding: 16px;
-  }
+    body {
+      background-image: url("assets/nh_holding_background_b2.jpg");
+      background-size: cover;
+      background-position: center bottom 45%;
+      margin: 0;
+      padding: 16px;
+    }
 
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 16px;
-  }
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-gap: 16px;
+    }
 
-  a {
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-  }
+    a {
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
 
-  a:hover {
-    text-shadow: 0 0 2px rgb(58, 58, 58);
-  }
+    a:hover {
+      text-shadow: 0 0 2px rgb(58, 58, 58);
+    }
 
-  .main * {
-    font-family: var(--diatype);
-    color: #555555;
-    font-size: 36px;
-    line-height: 1.2;
-    margin-top: 0;
-    padding: 0;
-    font-weight: normal;
-  }
+    .main * {
+      font-family: var(--diatype);
+      color: #555555;
+      font-size: 36px;
+      line-height: 1.2;
+      margin-top: 0;
+      padding: 0;
+      font-weight: normal;
+    }
 
-  h1 {
-    margin: 0;
-  }
+    h1 {
+      margin: 0;
+    }
 
-  h2,
-  p {
-    margin-bottom: calc(36px * 1.2);
-  }
+    h2,
+    p {
+      margin-bottom: calc(36px * 1.2);
+    }
 
+  <<<<<<< HEAD
+    .main {
+      height: 100%;
+      /* width: 50%; */
+      mix-blend-mode: difference;
+    }
+  =======
   .main {
     height: 100%;
     /* width: 50%; */
     mix-blend-mode: difference;
   }
+  >>>>>>> 7a5e7c28f40e7e22576a106baea4f7b2c8b492e2
 </style>
